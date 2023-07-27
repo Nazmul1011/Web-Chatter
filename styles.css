@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.chat-container {
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Added box shadow for depth */
+    border-radius: 6px;
+    transition: box-shadow 0.2s; /* Added transition for shadow animation */
+}
+
+.chat-messages {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items at the start (left) of the container */
+}
+
+.chat-bubble {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 20px; /* Increased border-radius to make it more rounded */
+    word-break: break-word; /* Allow long messages to wrap within the bubble */
+    transition: background-color 0.2s, transform 0.2s; /* Added transition for smooth animation */
+}
+
+.chat-bubble strong {
+    display: block;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.user-bubble {
+    background-color: #007bff;
+    color: #fff;
+    margin-top: 8px; /* Adjusted to create space between username and bubble */
+}
+
+.other-user-bubble {
+    background-color: #f1f1f1;
+    color: #000;
+    margin-top: 8px; /* Adjusted to create space between username and bubble */
+}
+
+.user-username {
+    color: #a0a0a0; /* Lighter color for the username */
+    font-size: 12px; /* Smaller font size for the username */
+    transition: color 0.2s; /* Added transition for smooth animation */
+}
+
+.other-user-username {
+    color: #a0a0a0; /* Lighter color for the username */
+    font-size: 12px; /* Smaller font size for the username */
+    transition: color 0.2s; /* Added transition for smooth animation */
+}
+
+input[type="text"] {
+    width: 94%;
+    padding: 10px;
+    border: 1px solid rgb(156, 159, 156);
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: border-color 0.2s; /* Added transition for border color animation */
+}
+
+input[type="text"]:focus {
+    border-color: #007bff; /* Change border color on input focus */
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s, transform 0.2s; /* Added transition for smooth animation */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02); /* Enlarge the button on hover */
+}
+
+button:focus {
+    outline: none;
+}
+
+.clear-button {
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: #ff0040;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s, transform 0.2s; /* Added transition for smooth animation */
+}
+
+.clear-button:hover {
+    background-color: #c70219;
+    transform: scale(1.02); /* Enlarge the button on hover */
+}
+
+.clear-button:focus {
+    outline: none;
+}
+
+
+
+
+
+/* Animation effects for chat bubbles */
+.message-container:hover .chat-bubble {
+    transform: scale(1.02); /* Enlarge the bubble on hover */
+}
+
+.message-container:hover .user-username,
+.message-container:hover .other-user-username {
+    color: #333; /* Darken the username color on hover */
+}
+
+/* Animation effects for chat container */
+.chat-container:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enlarge shadow on hover */
+}
