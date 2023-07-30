@@ -20,7 +20,8 @@ Before running the chat application, make sure you have the following installed 
 1. Clone the repository:
 
 git clone [https://github.com/your-username/chat-application.git](https://github.com/Nazmul1011/Web-Chatter)
-cd web-chatter
+
+- cd web-chatter
 
 2. Install the required packages:
 
