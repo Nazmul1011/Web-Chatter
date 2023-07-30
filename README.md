@@ -1,4 +1,4 @@
-# Chat Application
+# Web Chatter 
 
 This is a simple chat application that allows users to exchange messages in real-time. The application is implemented using WebSocket, Node.js, and the `ws` library to enable bi-directional communication between clients and the server.
 
